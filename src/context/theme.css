@@ -10,6 +10,8 @@
 }
 
 .label-switcher{
+    background-color: var(--theme-page-background);
+    color: var(--theme-page-text);
     padding-right: 10px;
     width: auto;
 }

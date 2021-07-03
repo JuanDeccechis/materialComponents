@@ -1,6 +1,6 @@
 @import './variables.css';
 
-div.app {
+div.app, .label-switcher {
   background-color: var(--theme-page-background);
   color: var(--theme-page-text);
   padding: 2% 5%;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import { ThemeContext } from './ThemeContext';
+import { withTheme } from './ThemeContext';
 import './theme.css';
 
 class ThemeChanger extends Component {
@@ -36,4 +37,4 @@ class ThemeChanger extends Component {
     }
 }
 
-export default ThemeChanger;
+export default withTheme(ThemeChanger);
