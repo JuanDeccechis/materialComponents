@@ -3,7 +3,8 @@ import './App.css';
 
 import { ThemeContext } from './context/ThemeContext';
 import ThemeChanger from './context/ThemeCharger';
-import Button from './button/Button';
+import Boton from './button/Boton';
+import ContinuousSlider from './volume/volume';
 
 class App extends Component {
   render() {
@@ -14,7 +15,8 @@ class App extends Component {
                       {
                         theme => (
                           <div className={`app ${theme}`}>
-                            <Button/>
+                            <Boton/>
+<ContinuousSlider />
                           </div>
                         )
                       }
