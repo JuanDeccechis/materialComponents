@@ -12,7 +12,7 @@ class Notification extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        value: 0,
+        value: 10,
         showNotifications: false,
     };
     this.handleClickNotification = this.handleClickNotification.bind(this);
@@ -41,25 +41,22 @@ class Notification extends Component {
                 <div id="myDropdown" className="dropdown-content">
                 <div className="user_ctrl_box center">
                     <div className="user_dropdown_menu">
-                        <a className="icons-li   " href="home.html">
-                             <span>User1</span>                                          
-                        </a>
+                        
+                             <span>User1</span>      
                     </div>
                     <div className="user_dropdown_menu">
-                        <a className="icons-li   " href="home.html">
-                             <span>User2</span>                                          
-                        </a>                                           
+                             <span>User2</span>      
                     </div>
                     <div className="dropdown-divider "></div>
                     <div className="user_dropdown_menu">
-                    <a className="icons-li" href="subpages/your_account.html">Mi Cuenta</a> 
+                    <span>Mi Cuenta</span>
                     </div>
                     <div className="user_dropdown_menu">
-                    <a className="icons-li" href="subpages/faq.html">Centro de ayuda</a> 
+                    <span>Centro de ayuda</span>
                     </div>
                     <div className="dropdown-divider "></div>
                     <div className="user_dropdown_menu">
-                    <a className="icons-li" href="index.html">Cerrar sesion</a> 
+                    <span>Cerrar sesion</span>
                     </div>
                 </div>   
             </div>

@@ -7,6 +7,8 @@ import Boton from './button/Boton';
 import ContinuousSlider from './volume/volume';
 import Notification from './notification/notification';
 
+import Router from './navBar/Router';
+
 class App extends Component {
   render() {
     return (
@@ -19,6 +21,7 @@ class App extends Component {
                             <Boton/>
 <ContinuousSlider />
 <Notification />
+<Router />
                           </div>
                         )
                       }
