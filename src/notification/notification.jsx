@@ -40,22 +40,22 @@ class Notification extends Component {
             { showNotifications &&
                 <div id="myDropdown" className="dropdown-content">
                 <div className="user_ctrl_box center">
-                    <div className="user_dropdown_menu">
+                    <div className="user_dropdown_menu" onClick={this.handleClickNotification}>
                         
                              <span>User1</span>      
                     </div>
-                    <div className="user_dropdown_menu">
+                    <div className="user_dropdown_menu" onClick={this.handleClickNotification}>
                              <span>User2</span>      
                     </div>
                     <div className="dropdown-divider "></div>
-                    <div className="user_dropdown_menu">
+                    <div className="user_dropdown_menu" onClick={this.handleClickNotification}>
                     <span>Mi Cuenta</span>
                     </div>
-                    <div className="user_dropdown_menu">
+                    <div className="user_dropdown_menu" onClick={this.handleClickNotification}>
                     <span>Centro de ayuda</span>
                     </div>
-                    <div className="dropdown-divider "></div>
-                    <div className="user_dropdown_menu">
+                    <div className="dropdown-divider"></div>
+                    <div className="user_dropdown_menu" onClick={this.handleClickNotification}>
                     <span>Cerrar sesion</span>
                     </div>
                 </div>   

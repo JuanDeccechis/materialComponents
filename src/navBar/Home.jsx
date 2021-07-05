@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import Boton from '../button/Boton';
+import ContinuousSlider from '../volume/volume';
+import Notification from '../notification/notification';
 
 class Home extends Component {
 
@@ -10,6 +13,9 @@ class Home extends Component {
         return (
             <div>
                 HOME
+                <Boton/>
+<ContinuousSlider />
+<Notification />
             </div>
         );
     }

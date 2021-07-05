@@ -59,3 +59,7 @@
     display: block;
     background-color: transparent;
 }
+
+.user_dropdown_menu{
+    cursor: pointer;
+}

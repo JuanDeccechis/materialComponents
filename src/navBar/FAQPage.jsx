@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import FAQ from '../faq/FAQ';
 
-class FAQ extends Component {
+class FAQPage extends Component {
 
     constructor(props) {
         super(props);
@@ -8,11 +9,9 @@ class FAQ extends Component {
 
     render() {
         return (
-            <div>
-                FAQ
-            </div>
+            <FAQ />
         );
     }
 }
 
-export default FAQ;
+export default FAQPage;
