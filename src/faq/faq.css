@@ -11,7 +11,7 @@
 }
 
 .accordion {
-    width: 90%;
+    padding: 0 16px;
     border: 1px solid white;
     cursor: pointer;
 }
@@ -30,6 +30,10 @@
     transition-duration: 1s;
     transition-timing-function: ease-out;
     transition-property: max-height;
+}
+
+.accordion-content p{
+    margin-top: 0;
 }
 
 .accordion-list li {
