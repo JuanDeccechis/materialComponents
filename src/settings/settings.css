@@ -26,13 +26,14 @@
 
 .settings-relative{
     position: relative;
-    width: 200px;
+    width: 240px;
     display: flex;
     justify-content: center;
 }
 
 #mySettings {
     background: rgba(4, 170, 109,.8);
+    width: 100%;
 }
 
 .dropdown-content {
@@ -60,6 +61,18 @@
     background-color: transparent;
 }
 
-.user_dropdown_menu{
+.settings_user_dropdown_menu{
     cursor: pointer;
+}
+
+.settings_user_dropdown_menu .container-switcher{
+    margin-bottom: 0;
+}
+
+.dropdown-content span .label-switcher{
+    padding: 0;
+}
+
+.slider.round{
+    padding: 0;
 }

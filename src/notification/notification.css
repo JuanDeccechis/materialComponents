@@ -33,6 +33,7 @@
 
 #myDropdown {
     background: rgba(4, 170, 109,.8);
+    width: 100%;
 }
 
 .dropdown-content {
@@ -60,6 +61,24 @@
     background-color: transparent;
 }
 
-.user_dropdown_menu{
+.notification_user_dropdown_menu{
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.notification_user_dropdown_menu span:first-child{
+    padding: 12px 0;
+    width: 80%;
+}
+
+.dropdown-content span.notification-delete{
+    padding: 12px 0;
+    width: 20%;
+    background-color: gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
