@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import './nav.css';
 import { withTheme } from '../context/ThemeContext';
 import HelpIcon from '@material-ui/icons/Help';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 class Nav extends Component {
   constructor(props) {
@@ -18,6 +19,9 @@ class Nav extends Component {
             </li>
             <li>
                 <NavLink to="/FAQ" activeClassName="active"> <HelpIcon /> </NavLink>
+            </li>
+            <li>
+                <NavLink to="/login" activeClassName="active"> <AccountCircleIcon /> </NavLink>
             </li>
         </ul>
       )

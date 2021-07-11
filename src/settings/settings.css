@@ -1,0 +1,65 @@
+.settings-container{
+    display: inline-flex;
+    position: relative;
+    flex-shrink: 0;
+    vertical-align: middle;
+}
+
+.settings-not-empty{
+    cursor: pointer;
+}
+
+.settings-badge-value{
+    border-radius: 10px;
+    align-items: center;
+    font-size: 0.75rem; /* menor tamaño para notificaciones*/
+    height: 20px;
+    display: flex;
+    padding: 0 6px;
+    position: absolute;
+    color: #fff;
+    background-color: #04AA6D;
+    right: 0;
+    transform: scale(1) translate(50%, -50%);
+}
+
+
+.settings-relative{
+    position: relative;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+#mySettings {
+    background: rgba(4, 170, 109,.8);
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    right: auto;
+    top: 25px;
+    background-color: #04AA6D;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*buena sombra*/
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.dropdown-content span {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+}
+
+.user_dropdown_menu{
+    cursor: pointer;
+}

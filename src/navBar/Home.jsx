@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Boton from '../button/Boton';
 import ContinuousSlider from '../volume/volume';
 import Notification from '../notification/notification';
+import Settings from '../settings/settings';
 
 class Home extends Component {
 
@@ -16,6 +17,7 @@ class Home extends Component {
                 <Boton/>
 <ContinuousSlider />
 <Notification />
+<Settings />
             </div>
         );
     }
