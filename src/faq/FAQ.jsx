@@ -36,8 +36,6 @@ class FAQ extends Component {
     
 
     render() {
-        const { isMobile, toggleMenuMobile, showMenuMobile, search, user, setUser, globalState } = this.props;
-        const { playlistSelected, isFavorite, score, scoring, songSelected, addedToLists, addedToFavorites } = this.state;
         return (
             <div>
         <h2>Preguntanos</h2>

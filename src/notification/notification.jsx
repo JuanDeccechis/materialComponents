@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { withTheme } from '../context/ThemeContext';
-import Badge from '@material-ui/core/Badge';
+import { withRouter, NavLink } from "react-router-dom";
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import './notification.css';
@@ -10,30 +10,53 @@ class Notification extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        value: 5,
+        value: 0,
         showNotifications: false,
         notificationData: [{
-            "text": "user1"
+            "text": "Nuevas ofertas en nuestros planes",
+            "index": 0,
+            "destiny": "/register"
         }, {
-            "text": "user2"
+            "text": "A Gerónimo Casanova le gustó tu comentario",
+            "index": 1,
+            "destiny": "/home"
         }, {
-            "text": "Pepe te envió una solicitud"
+            "text": "Pepe Rodriguez te envió una solicitud",
+            "index": 2,
+            "destiny": "/home"
         }, {
-            "text": "María compartió una foto"
+            "text": "María Fernandez compartió una foto",
+            "index": 3,
+            "destiny": "/home"
         }, {
-            "text": "A Gerónimo le gustó tu comentario"
+            "text": "Es cumpleaños de Pilar De La Canal",
+            "index": 4,
+            "destiny": "/home"
         }],
     };
     this.handleClickNotification = this.handleClickNotification.bind(this);
     this.handleClickDelete = this.handleClickDelete.bind(this);
+    this.handleClickViewNotification = this.handleClickViewNotification.bind(this);
+  }
+
+  componentDidMount() {
+      this.setState({ value: this.state.notificationData.length });
   }
 
   handleClickNotification() {
       this.setState({ showNotifications: !this.state.showNotifications });
   }
 
-  handleClickDelete(index) {
-      console.log(index);
+  handleClickViewNotification(notif) {
+    this.handleClickDelete(notif);
+    this.handleClickNotification();
+  }
+
+  handleClickDelete(notif) {
+      let notificationDataUpdated = this.state.notificationData;
+      const index = notificationDataUpdated.indexOf(notif);
+      notificationDataUpdated.splice(index, 1);
+      this.setState({ notificationData: notificationDataUpdated, value: notificationDataUpdated.length });
   }
 
   render(){
@@ -47,7 +70,7 @@ class Notification extends Component {
                 </div>
                 :
                 <div className="notification-container notification-not-empty" onClick={this.handleClickNotification}>
-                <NotificationsActiveIcon />
+                    <NotificationsActiveIcon className={showNotifications && "active"}/>
                 <span className="notification-badge-value">{value}</span>
             </div>
             }
@@ -55,9 +78,11 @@ class Notification extends Component {
                 <div id="myDropdown" className="dropdown-content">
                     <div className="user_ctrl_box center">
                         { notificationData.map((notif, index) => 
-                            <div className="notification_user_dropdown_menu">
-                                <span onClick={this.handleClickNotification}>{notif.text}</span>
-                                <span className="notification-delete" onClick={(index) => this.handleClickDelete(index)}>X</span>
+                            <div className="notification_user_dropdown_menu" key={index}>
+                                <NavLink to={notif.destiny} onClick={() => this.handleClickViewNotification(notif)}>
+                                <span>{notif.text}</span>
+                                </NavLink>
+                                <span className="notification-delete" onClick={() => this.handleClickDelete(notif)}>X</span>
                             </div>
                         )}
                     </div>   
@@ -68,4 +93,4 @@ class Notification extends Component {
   }
 }
 
-export default withTheme(Notification);
+export default withTheme(withRouter(Notification));

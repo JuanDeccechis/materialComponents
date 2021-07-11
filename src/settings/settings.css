@@ -26,14 +26,12 @@
 
 .settings-relative{
     position: relative;
-    width: 240px;
     display: flex;
     justify-content: center;
 }
 
 #mySettings {
     background: rgba(4, 170, 109,.8);
-    width: 100%;
 }
 
 .dropdown-content {
@@ -41,7 +39,9 @@
     position: absolute;
     right: auto;
     top: 25px;
+    right: 5%;
     background-color: #04AA6D;
+    width: 240px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*buena sombra*/
     border-radius: 10px;

@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/core/Slider';
 import VolumeDown from '@material-ui/icons/VolumeDown';
@@ -26,11 +24,11 @@ class volume extends Component {
     };
 
     handleClickUp = (event) => {
-        this.setState({ value: ++this.state.value });
+        this.setState({ value: this.state.value+1 });
     }
 
     handleClickDown = (event) => {
-        this.setState({ value: --this.state.value });
+        this.setState({ value: this.state.value-1 });
     }
 
     handleClickShow = (event) => {
@@ -41,7 +39,7 @@ class volume extends Component {
         const { value, showVolumeBar } = this.state;
   return (
     <div>
-      <Typography>
+{/*      <Typography>
         Volume
       </Typography>
       <div className="volume-flex-inline-size">
@@ -56,7 +54,7 @@ class volume extends Component {
           </div>
           <VolumeUp onClick={this.handleClickUp}/>
        </div>
-
+*/}
 
         <div className="volume-flex-inline-size">
         { value > 50 ?

@@ -26,14 +26,12 @@
 
 .notification-relative{
     position: relative;
-    width: 200px;
     display: flex;
     justify-content: center;
 }
 
 #myDropdown {
     background: rgba(4, 170, 109,.8);
-    width: 100%;
 }
 
 .dropdown-content {
@@ -42,7 +40,7 @@
     right: auto;
     top: 25px;
     background-color: #04AA6D;
-    min-width: 160px;
+    width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*buena sombra*/
     border-radius: 10px;
     z-index: 1;
@@ -67,9 +65,13 @@
     flex-direction: row;
 }
 
-.notification_user_dropdown_menu span:first-child{
+.notification_user_dropdown_menu a:first-child{
     padding: 12px 0;
     width: 80%;
+}
+
+.notification_user_dropdown_menu a span{
+    padding: 0;
 }
 
 .dropdown-content span.notification-delete{

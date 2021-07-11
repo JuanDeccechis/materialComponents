@@ -24,9 +24,9 @@ class ThemeChanger extends Component {
             <div>
                 <div className="container-switcher">
                     <span className="label-switcher"> Modo nocturno: </span>
-                    <label class="switch">
+                    <label className="switch">
                         <input type="checkbox" checked={this.state.switchDark} onChange={this.handleSwitch} />
-                        <span class="slider round"></span>
+                        <span className="slider round"></span>
                     </label>
                 </div>
                 <ThemeContext.Provider value={this.state.theme} >

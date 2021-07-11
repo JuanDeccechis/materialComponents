@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import { withTheme } from '../context/ThemeContext';
-import Badge from '@material-ui/core/Badge';
+import Volume from '../volume/volume';
 import SettingsIcon from '@material-ui/icons/Settings';
 import './settings.css';
-import { CONNREFUSED } from "dns";
 
 
 class Settings extends Component {
@@ -15,11 +14,6 @@ class Settings extends Component {
         showNotifications: true,
     };
     this.handleClickSettings = this.handleClickSettings.bind(this);
-    this.handleSwitch = this.handleSwitch.bind(this);
-}
-
-handleSwitch(event){
-    this.setState({ showNotifications: !this.state.showNotifications });
 }
 
   handleClickSettings() {
@@ -27,13 +21,13 @@ handleSwitch(event){
   }
 
   render(){
-    const { value, showSettings } = this.state;
+    const { showSettings } = this.state;
 
       return(
         <div className="settings-relative">
 
             <div className="settings-container settings-not-empty" onClick={this.handleClickSettings}>
-            <SettingsIcon />
+            <SettingsIcon className={showSettings && "active"} />
         </div>
         
             { showSettings &&
@@ -43,28 +37,30 @@ handleSwitch(event){
                     <span>
                         <div className="container-switcher">
                             <span className="label-switcher">Mostrar notificaciones: </span>
-                            <label class="switch">
-                                <input type="checkbox" checked={this.state.showNotifications} onChange={this.handleSwitch} />
-                                <span class="slider round"></span>
+                            <label className="switch">
+                                <input type="checkbox" checked={this.props.notificationsEnabled} onChange={this.props.handleSwitchNotifications} />
+                                <span className="slider round"></span>
                             </label>
                         </div>
 
                     </span>
                     </div>
                     <div className="settings_user_dropdown_menu" onClick={this.handleClickSettings}>
-                             <span>User2</span>      
+                    <span>
+                        <div className="container-switcher">
+                            <div>Notificar mi actividad a: </div>
+                            <div>Amigos </div>
+                        </div>
+
+                    </span>
                     </div>
-                    <div className="dropdown-divider "></div>
                     <div className="settings_user_dropdown_menu" onClick={this.handleClickSettings}>
                     <span>Mi Cuenta</span>
                     </div>
                     <div className="settings_user_dropdown_menu" onClick={this.handleClickSettings}>
-                    <span>Centro de ayuda</span>
+                        <Volume />
                     </div>
-                    <div className="dropdown-divider"></div>
-                    <div className="settings_user_dropdown_menu" onClick={this.handleClickSettings}>
-                    <span>Cerrar sesion</span>
-                    </div>
+                   
                 </div>   
             </div>
             }
