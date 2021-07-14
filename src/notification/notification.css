@@ -31,7 +31,7 @@
 }
 
 #myDropdown {
-    background: rgba(4, 170, 109,.8);
+    background: rgba(4, 170, 109,.98);
 }
 
 .dropdown-content {
@@ -63,6 +63,7 @@
     cursor: pointer;
     display: flex;
     flex-direction: row;
+    border-top: 2px solid #fff;
 }
 
 .notification_user_dropdown_menu a:first-child{
@@ -83,4 +84,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.dropdown-title{
+    width: 90%;
+    margin: 10px auto;
+    padding: 5px 0;
+    background: rgba(0, 0, 139,.98);
+    border-radius: 100px;
 }

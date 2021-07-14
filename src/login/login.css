@@ -1,0 +1,11 @@
+.input-icons svg {
+    position: absolute;
+}
+
+.icon-color{
+    color: var(--theme-page-icon);
+}
+
+.input-with-padding{
+    padding-left: 25px;
+}

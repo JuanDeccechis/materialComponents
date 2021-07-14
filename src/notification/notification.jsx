@@ -74,9 +74,10 @@ class Notification extends Component {
                 <span className="notification-badge-value">{value}</span>
             </div>
             }
-            { showNotifications &&
+            { showNotifications && value > 0 &&
                 <div id="myDropdown" className="dropdown-content">
                     <div className="user_ctrl_box center">
+                        <h2 className="dropdown-title">{notificationData.length} Notificaciones</h2>
                         { notificationData.map((notif, index) => 
                             <div className="notification_user_dropdown_menu" key={index}>
                                 <NavLink to={notif.destiny} onClick={() => this.handleClickViewNotification(notif)}>
