@@ -50,33 +50,33 @@ class FAQ extends Component {
             </div>
         <ul className="accordion-list">
             <li>
-                <div class="accordion" onClick={() => this.desplegarAcordion(0)}>
-                    <div class="accordion-title"> Como doy de alta el servicio?</div> 
-                    <div class="accordion-content">
+                <div className="accordion" onClick={() => this.desplegarAcordion(0)}>
+                    <div className="accordion-title"> Como doy de alta el servicio?</div> 
+                    <div className="accordion-content">
                         <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus deserunt neque possimus voluptate architecto corporis exercitationem laudantium quo blanditiis rem labore et, voluptatibus minus perferendis, expedita delectus beatae sequi sed.</p>
                     </div>
                 </div>
             </li>
             <li>
-                <div class="accordion" onClick={() => this.desplegarAcordion(1)}>
-                    <div class="accordion-title"> Cuanto cuesta?</div> 
-                    <div class="accordion-content">
+                <div className="accordion" onClick={() => this.desplegarAcordion(1)}>
+                    <div className="accordion-title"> Cuanto cuesta?</div> 
+                    <div className="accordion-content">
                         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam quibusdam corporis tempore nobis laudantium explicabo velit aspernatur eveniet! Consequuntur sapiente atque natus alias tenetur expedita magni autem eum fugiat error.</p>
                     </div>
                 </div>
             </li>
             <li>
-                <div class="accordion" onClick={() => this.desplegarAcordion(2)}>
-                    <div class="accordion-title"> Donde veo mis playlist?</div> 
-                    <div class="accordion-content">
+                <div className="accordion" onClick={() => this.desplegarAcordion(2)}>
+                    <div className="accordion-title"> Donde veo mis playlist?</div> 
+                    <div className="accordion-content">
                         <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, quis. Dignissimos veniam alias similique sint quisquam mollitia praesentium adipisci fugiat atque vitae doloremque consequuntur dolorum, quibusdam sequi, enim doloribus quidem?</p>
                     </div>
                 </div>
             </li>
             <li>
-                <div class="accordion" onClick={() => this.desplegarAcordion(3)}>
-                    <div class="accordion-title"> Como subo un audio</div> 
-                    <div class="accordion-content">
+                <div className="accordion" onClick={() => this.desplegarAcordion(3)}>
+                    <div className="accordion-title"> Como subo un audio</div> 
+                    <div className="accordion-content">
                         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non eveniet amet tenetur error ullam ea voluptatum enim ut porro quae, minima accusantium sunt assumenda perferendis ad quas beatae aperiam obcaecati?</p>
                     </div>
                 </div>
@@ -93,17 +93,17 @@ class FAQ extends Component {
             </div>
         <ul className="accordion-list">
             <li>
-                <div class="accordion" onClick={() => this.desplegarAcordion(4)}>
-                    <div class="accordion-title"> Como realizo los pagos?</div> 
-                    <div class="accordion-content">
+                <div className="accordion" onClick={() => this.desplegarAcordion(4)}>
+                    <div className="accordion-title"> Como realizo los pagos?</div> 
+                    <div className="accordion-content">
                         <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus deserunt neque possimus voluptate architecto corporis exercitationem laudantium quo blanditiis rem labore et, voluptatibus minus perferendis, expedita delectus beatae sequi sed.</p>
                     </div>
                 </div>
             </li>
             <li>
-                <div class="accordion" onClick={() => this.desplegarAcordion(5)}>
-                    <div class="accordion-title"> Cuando se habilita mi plan?</div> 
-                    <div class="accordion-content">
+                <div className="accordion" onClick={() => this.desplegarAcordion(5)}>
+                    <div className="accordion-title"> Cuando se habilita mi plan?</div> 
+                    <div className="accordion-content">
                         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam quibusdam corporis tempore nobis laudantium explicabo velit aspernatur eveniet! Consequuntur sapiente atque natus alias tenetur expedita magni autem eum fugiat error.</p>
                     </div>
                 </div>

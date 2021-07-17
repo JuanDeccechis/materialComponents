@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/materialComponents/static/css/main.59706a89.chunk.css",
-    "main.js": "/materialComponents/static/js/main.060a8765.chunk.js",
-    "main.js.map": "/materialComponents/static/js/main.060a8765.chunk.js.map",
+    "main.css": "/materialComponents/static/css/main.324ac1e9.chunk.css",
+    "main.js": "/materialComponents/static/js/main.617f6c58.chunk.js",
+    "main.js.map": "/materialComponents/static/js/main.617f6c58.chunk.js.map",
     "runtime-main.js": "/materialComponents/static/js/runtime-main.d7e981fa.js",
     "runtime-main.js.map": "/materialComponents/static/js/runtime-main.d7e981fa.js.map",
-    "static/js/2.3762c5d4.chunk.js": "/materialComponents/static/js/2.3762c5d4.chunk.js",
-    "static/js/2.3762c5d4.chunk.js.map": "/materialComponents/static/js/2.3762c5d4.chunk.js.map",
+    "static/js/2.35d9e2c2.chunk.js": "/materialComponents/static/js/2.35d9e2c2.chunk.js",
+    "static/js/2.35d9e2c2.chunk.js.map": "/materialComponents/static/js/2.35d9e2c2.chunk.js.map",
     "index.html": "/materialComponents/index.html",
-    "static/css/main.59706a89.chunk.css.map": "/materialComponents/static/css/main.59706a89.chunk.css.map",
-    "static/js/2.3762c5d4.chunk.js.LICENSE.txt": "/materialComponents/static/js/2.3762c5d4.chunk.js.LICENSE.txt"
+    "static/css/main.324ac1e9.chunk.css.map": "/materialComponents/static/css/main.324ac1e9.chunk.css.map",
+    "static/js/2.35d9e2c2.chunk.js.LICENSE.txt": "/materialComponents/static/js/2.35d9e2c2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d7e981fa.js",
-    "static/js/2.3762c5d4.chunk.js",
-    "static/css/main.59706a89.chunk.css",
-    "static/js/main.060a8765.chunk.js"
+    "static/js/2.35d9e2c2.chunk.js",
+    "static/css/main.324ac1e9.chunk.css",
+    "static/js/main.617f6c58.chunk.js"
   ]
 }
