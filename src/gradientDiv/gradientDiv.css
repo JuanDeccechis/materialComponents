@@ -1,0 +1,28 @@
+
+.gradient-container {
+    width: 200px;
+    height: 100px;
+    position: relative;
+}
+
+.gradient-div {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    left: -10px;
+    bottom: -10px;
+    right: -10px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, black, rgb(68, 62, 62), rgb(235, 140, 15));
+}
+
+.gradient-content {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 10px;
+    background-color: blueviolet;
+}

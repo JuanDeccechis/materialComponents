@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Boton from '../button/Boton';
 import Comentario from '../comentario/Comentario';
 import ContinuousSlider from '../volume/volume';
+import GradientDiv from '../gradientDiv/GradientDiv';
 
 class Home extends Component {
 
@@ -18,7 +19,7 @@ y mas reciente (quizas)*/
                 <Boton/>
 <ContinuousSlider />
 <Comentario />
-
+<GradientDiv />
             </div>
         );
     }
